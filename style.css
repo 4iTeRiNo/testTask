@@ -89,3 +89,104 @@
         }
     }
 }
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+
+
+    background: url(./img/section2/background\ wall.png);
+
+    .descriptionHeaderSection2 {
+        font-size: 30px;
+        color: #416DF4;
+        text-align: right;
+    }
+
+    .wrapperSection2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        margin-top: 27px;
+        column-gap: 165px;
+
+        .buttonContainer {
+            display: flex;
+            justify-content: end;
+
+            margin-top: 39px;
+            column-gap: 11px;
+
+            .buttonHanlerServer {
+                color: #671D00;
+                text-align: center;
+                padding: 4px 12px;
+
+                border: 1px solid rgba(103, 29, 0, 0.48);
+                background: rgba(0, 0, 0, 0.55);
+            }
+        }
+    }
+
+    .contentItems {
+
+        .contentItem {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            margin-top: 3px;
+            column-gap: 19px;
+            border: 1px solid rgba(103, 29, 0, 0.48);
+
+            .contentDescription {
+                display: grid;
+                width: 100%;
+                justify-content: center;
+                grid-template-columns: 1fr 30% 30%;
+
+            }
+
+        }
+    }
+
+    .wrapperBox {
+
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 20px;
+
+        .wrapperPayBox{
+            display: flex;
+            flex-direction: column;
+            font-size: 54px;
+            justify-content: center;
+        }
+
+        .buttonPay {
+            width: 180px;
+            height: 40px;
+            color: #000;
+            font-size: 16px;
+
+            padding: 7px 15px;
+            border-radius: 7px;
+            background-color: #FCFF00;
+        }
+    }
+}
+
+span:not(:first-child) {
+    text-align: center;
+}
+
+
+.symbolRub {
+    color: #fff;
+}
