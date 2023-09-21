@@ -20,16 +20,15 @@
 .wrapper {
     max-width: 2609px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .section1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     position: relative;
-    height: 892px;
     max-height: 100%;
 
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -50,8 +49,28 @@
         }
 
         .boxes {
+            position: relative;
             max-width: 100%;
+            z-index: 999;
+
+
+         
         }
+
+    }
+    
+    .wrapperContent::after{
+        content: url('./img/section1/glow 1.png');
+        position: absolute;
+        bottom: 0;
+        top: 0%;
+        opacity: .6;
+    }
+
+    .wrapperContent::before {
+        content: url('./img/section1/BLUE\ GLOW\ 3.png');
+        position: absolute;
+        bottom: 0;
     }
 
     .mafiaMen {
@@ -81,17 +100,29 @@
 
         .descriptionHeader {
             font-size: 42px;
+            z-index: 99;
         }
 
         .descriptionParagraph {
             font-size: 20px;
-            z-index: 999;
+            z-index: 99;
         }
     }
+
+}
+
+.section1::before {
+    content: url('./img/section1/Layer\ 157\ 3.png');
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
 }
 
 .section2 {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -113,6 +144,16 @@
 
         margin-top: 27px;
         column-gap: 165px;
+
+        .logoVito{
+            position: relative;
+        }
+
+        .logoVito::before{
+            position: absolute;
+            content: url('./img/section2/Ellipse\ 1.png');
+            left: -80%;
+        }
 
         .buttonContainer {
             display: flex;
@@ -162,7 +203,7 @@
 
         margin-top: 20px;
 
-        .wrapperPayBox{
+        .wrapperPayBox {
             display: flex;
             flex-direction: column;
             font-size: 54px;
@@ -182,11 +223,22 @@
     }
 }
 
+.section2::before{
+    content: url('./img/section1/BLUE\ GLOW\ 3.png');
+    position: absolute;
+    bottom: 0;
+    background-size: cover;
+}
+
 span:not(:first-child) {
     text-align: center;
 }
 
-
 .symbolRub {
     color: #fff;
+}
+
+.image{
+    position: relative;
+    z-index: 999;
 }
